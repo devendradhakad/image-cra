@@ -8,7 +8,6 @@ https://image-cra.herokuapp.com/
 
 ## _Documentation_
 
-[![N|Solid](https://nfweb-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Blazeclan-final.jpg)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -52,7 +51,7 @@ for(let r = 8; r <= 256; r += 8){
 ```
 
 ```
-Complexity: O(32768)
+Complexity: O(n^3)   Where n = number of pixels
 ```
 
 Now we have an array of length 32768 unique [R, G, B] set

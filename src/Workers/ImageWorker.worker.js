@@ -2,7 +2,6 @@ const workercode = () => {
   onmessage = (e) => {
     const [width, height, pixels, id] = e.data;
     let counter = 0;
-    let pixelNumber = 1;
     for (let r = 8; r <= 256; r += 8) {
       for (let g = 8; g <= 256; g += 8) {
         for (let b = 8; b <= 256; b += 8) {
@@ -16,19 +15,10 @@ const workercode = () => {
           if (y > width / 2) {
             pixels[off + 3] = 2 * (1 - x / 10);
           }
-          console.log(
-            `R, G, B values for each pixel ${pixelNumber}`,
-            r,
-            g,
-            b,
-            "\n",
-          );
           counter += 4;
-          pixelNumber += 1;
         }
       }
     }
-    console.log("iiii--", pixels);
     postMessage([pixels]);
   };
 };
