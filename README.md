@@ -3,7 +3,7 @@
 Live Project Url
 
 ```sh
-https://test-code-image.herokuapp.com/
+https://image-cra.herokuapp.com/
 ```
 
 ## _Documentation_
