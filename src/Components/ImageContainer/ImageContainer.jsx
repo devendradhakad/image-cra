@@ -41,7 +41,7 @@ export default function ImageContainer() {
       const newImgData = ctx.createImageData(width, height);
       // Fill all fixels except 0 values
       const clampedArray = new Uint8ClampedArray(
-        ev.data[0].filter((elem) => elem > 0),
+        ev.data[0],
       );
       // Set Pixels into ImageData
       newImgData.data.set(clampedArray);
