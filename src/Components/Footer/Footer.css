@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+  background: #111;
+  flex-shrink: 0;
+}
+ul {
+  padding: 1.25rem;
+  text-align: center;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.25rem 0.75rem;
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+}
+
+.site-header {
+  background: #0d1313;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 10px;
+}

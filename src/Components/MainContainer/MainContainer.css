@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 0 0 50%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.column p {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
