@@ -51,7 +51,7 @@ for(let r = 8; r <= 256; r += 8){
 ```
 
 ```
-Complexity: O(n^3)   Where n = number of pixels
+Complexity: O(n^3)
 ```
 
 Now we have an array of length 32768 unique [R, G, B] set
