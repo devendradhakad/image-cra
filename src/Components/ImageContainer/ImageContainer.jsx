@@ -2,7 +2,7 @@ import React, {
   useRef, useEffect, useCallback, useState,
 } from "react";
 
-import workerScript from "../../Workers/ImageWorker.worker";
+import { workerScript } from "../../Workers/ImageWorker.worker";
 
 /**
  *

@@ -2,10 +2,26 @@ import { jest, describe } from "@jest/globals";
 import { render } from "@testing-library/react";
 import ImageContainer from "./ImageContainer";
 
-import workerScript from "../../Workers/ImageWorker.worker.js";
-import ImageWorker from "../../TestUtils/ImageWorker";
+import { workerScript, workercode } from "../../Workers/ImageWorker.worker.js";
 
-window.Worker = ImageWorker;
+/**
+ * @description Define worker
+ */
+class MyWorker {
+  constructor() {
+    this.onmessage = (msg) => {
+      const newWorkerCode = new workercode()
+      const pixels = newWorkerCode.calculatePixels({data: msg});
+      return [pixels]
+    };
+  }
+  postMessage(msg) {
+    const newFn = this.onmessage(msg);
+    return newFn
+  }
+}
+
+window.Worker = MyWorker;
 
 /**
  *
